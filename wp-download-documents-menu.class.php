@@ -18,11 +18,11 @@
                     <input
                         type="checkbox"
                         class="nav-menu-is-download"
-                        name="nav-menu-is-download[<?php echo $item_id; ?>]"
-                        id="nav-menu-is-download-for-<?php echo $item_id; ?>"
+                        name="nav-menu-is-download[<?php echo esc_attr( $item_id ); ?>]"
+                        id="nav-menu-is-download-for-<?php echo esc_attr( $item_id ); ?>"
                         <?php checked( '1', $is_download ); ?>
                         value="1">
-                    <label for="nav-menu-is-download-for-<?php echo $item_id; ?>">
+                    <label for="nav-menu-is-download-for-<?php echo esc_attr( $item_id ); ?>">
                         <?php _e( 'Download', 'text-domain'); ?>
                     </label>
                 </div>
